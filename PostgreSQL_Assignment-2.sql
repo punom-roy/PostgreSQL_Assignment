@@ -89,7 +89,7 @@ JOIN rangers r ON s.ranger_id = r.ranger_id
 ORDER BY s.sighting_time DESC
 LIMIT 2;
 
----7️⃣ Update all species discovered before year 1800 to have status 'Historic'.( I got a little help from ChatGPT for this question )
+---7️⃣ Update all species discovered before year 1800 to have status 'Historic'.
 SELECT conname
 FROM pg_constraint
 WHERE conrelid = 'species'::regclass
