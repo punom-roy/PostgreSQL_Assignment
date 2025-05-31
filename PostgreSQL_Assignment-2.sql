@@ -20,6 +20,7 @@ CREATE TABLE species (
     ) DEFAULT 'Least Concern'
 );
 
+-- sightings table
 CREATE TABLE sightings (
     sighting_id SERIAL PRIMARY KEY,
     species_id INT REFERENCES species(species_id) ON DELETE CASCADE,
